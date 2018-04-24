@@ -1,0 +1,301 @@
+; Mon Feb 19 20:02:27 PKT 2018
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot Teams+Higest+Run
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Number+Of+Innings
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KB_854984_Class24
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Match+T
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Sport+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Ground+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Match+Date
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Number+Of+Overs
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Teams+Overs
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Umpire+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tournament+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Players+type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tournament+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Team+Country
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Players+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Teams+Wickets
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Player+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Match+Location
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Ball+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Wickets
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Umpire+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Team+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Match+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Runs
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KB_854984_Class76
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Bat+Size
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot KB_854984_Class74
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Players
+	(is-a USER)
+	(role concrete)
+	(single-slot Player+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Players+type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Wickets
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Runs
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Batsman
+	(is-a Players)
+	(role concrete))
+
+(defclass Bowler
+	(is-a Players)
+	(role concrete))
+
+(defclass All+Rounder
+	(is-a Players)
+	(role concrete))
+
+(defclass Sport
+	(is-a USER)
+	(role concrete)
+	(single-slot Sport+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Cricket
+	(is-a Sport)
+	(role concrete))
+
+(defclass Football
+	(is-a Sport)
+	(role concrete))
+
+(defclass Match
+	(is-a USER)
+	(role concrete)
+	(single-slot Match+Location
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Number+Of+Innings
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Match+Date
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Number+Of+Overs
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass India+Vs+Pakistan
+	(is-a Match)
+	(role concrete))
+
+(defclass Team
+	(is-a USER)
+	(role concrete)
+	(single-slot Team+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Teams+Overs
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Teams+Higest+Run
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Teams+Wickets
+		(type INTEGER)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Pakistan
+	(is-a Team)
+	(role concrete))
+
+(defclass India
+	(is-a Team)
+	(role concrete))
+
+(defclass Umpire
+	(is-a USER)
+	(role concrete)
+	(single-slot Umpire+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Tv+Umpire
+	(is-a Umpire)
+	(role concrete))
+
+(defclass Field+Umpire
+	(is-a Umpire)
+	(role concrete))
+
+(defclass Ball
+	(is-a USER)
+	(role concrete)
+	(single-slot Ball+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Red+Ball
+	(is-a Ball)
+	(role concrete))
+
+(defclass White+Ball
+	(is-a Ball)
+	(role concrete))
+
+(defclass Pink+Ball
+	(is-a Ball)
+	(role concrete))
+
+(defclass Bat
+	(is-a USER)
+	(role concrete)
+	(single-slot Bat+Size
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Ground
+	(is-a USER)
+	(role concrete)
+	(single-slot Ground+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass National+Cricket+Stadium
+	(is-a Ground)
+	(role concrete))
+
+(defclass Gadafi+Stadium+Lahore
+	(is-a Ground)
+	(role concrete))
+
+(defclass Tournament
+	(is-a USER)
+	(role concrete)
+	(single-slot Tournament+Name
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot Tournament+Type
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass 50+Over+World+Cup
+	(is-a Tournament)
+	(role concrete))
+
+(defclass T20+World+Cup
+	(is-a Tournament)
+	(role concrete))
+
+(defclass Asia+Cup
+	(is-a Tournament)
+	(role concrete))

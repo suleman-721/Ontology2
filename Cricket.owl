@@ -1,0 +1,682 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://www.owl-ontologies.com/Ontology1519053669.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://www.owl-ontologies.com/Ontology1519053669.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Cricket">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cricket</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Sport"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Pakistan">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pakistan</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Team"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Tournament">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tournament</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Football">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Football</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Sport"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Pink_Ball">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Ball"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pink Ball</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Gadafi_Stadium_Lahore">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Ground"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gadafi Stadium Lahore</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="White_Ball">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >White Ball</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Ball"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="All_Rounder">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Players"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >All Rounder</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Asia_Cup">
+    <rdfs:subClassOf rdf:resource="#Tournament"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Asia Cup</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Tv_Umpire">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Umpire"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tv Umpire</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Sport">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sport</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Red_Ball">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Red Ball</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Ball"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Umpire">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Umpire</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="National_Cricket_Stadium">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Ground"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >National Cricket Stadium</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Bat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bat</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="India_Vs_Pakistan">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Match"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >India Vs Pakistan</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Ball">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ball</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Bowler">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Players"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bowler</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Team">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Team</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="India">
+    <rdfs:subClassOf rdf:resource="#Team"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >India</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Ground">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ground</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Batsman">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Players"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Batsman</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#Match">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Match</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="Field_Umpire">
+    <rdfs:subClassOf rdf:resource="#Umpire"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Field Umpire</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="T20_World_Cup">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T20 World Cup</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Tournament"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Players">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Players</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="_50_Over_World_Cup">
+    <rdfs:subClassOf rdf:resource="#Tournament"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >50 Over World Cup</rdfs:label>
+  </owl:Class>
+  <owl:FunctionalProperty rdf:ID="Match_Type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Match Type</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Runs">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Runs</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Players"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Umpire_Name">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Umpire"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Umpire Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Tournament_Name">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Tournament"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tournament Name</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Match_Location">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Match Location</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Match"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Umpire_Type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Umpire Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Teams_Higest_Run">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Teams Higest Run</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Team"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Players_Type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Players Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Number_Of_Innings">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Number Of Innings</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Match"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Team_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Team Name</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Team"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Ground_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ground Name</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Ground"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Ball_Type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ball Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Ball"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Number_Of_Overs">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Match"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Number Of Overs</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Bat_Size">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Bat"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bat Size</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Teams_Overs">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Team"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Teams Overs</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Player_Name">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Player Name</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Players"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Team_Country">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Team Country</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Tournament_Type">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tournament Type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Tournament"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Players_type">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Players type</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Players"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Match_Date">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Match"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Match Date</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="KB_854984_Class74">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >KB_854984_Class74</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Teams_Wickets">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Team"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Teams Wickets</rdfs:label>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Match_T">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Match T</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="KB_854984_Class24">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >KB_854984_Class24</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Wickets">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Wickets</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Players"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="Sport_Name">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sport Name</rdfs:label>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+          <owl:Class rdf:about="#Sport"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="KB_854984_Class76">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >KB_854984_Class76</rdfs:label>
+  </owl:FunctionalProperty>
+  <Field_Umpire rdf:about="KB_854984_Class82">
+    <Umpire_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stefin</Umpire_Name>
+  </Field_Umpire>
+  <Gadafi_Stadium_Lahore rdf:about="KB_854984_Class96">
+    <Ground_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gadafi Stadium Lahore</Ground_Name>
+  </Gadafi_Stadium_Lahore>
+  <Ball rdf:about="KB_854984_Class79">
+    <Ball_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >White Ball</Ball_Type>
+  </Ball>
+  <Tv_Umpire rdf:about="KB_854984_Class81">
+    <Umpire_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >george</Umpire_Name>
+  </Tv_Umpire>
+  <National_Cricket_Stadium rdf:about="KB_854984_Class95">
+    <Ground_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >National Cricket Stadium</Ground_Name>
+  </National_Cricket_Stadium>
+  <Umpire rdf:about="KB_854984_Class80">
+    <Umpire_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Aleem Dar</Umpire_Name>
+  </Umpire>
+  <Pakistan rdf:about="KB_854984_Class90">
+    <Team_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pakistan</Team_Name>
+    <Teams_Higest_Run rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >350</Teams_Higest_Run>
+    <Teams_Overs rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >5025221.0</Teams_Overs>
+    <Teams_Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >78210</Teams_Wickets>
+  </Pakistan>
+  <Team rdf:about="KB_854984_Class37">
+    <Teams_Overs rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >2565151.0</Teams_Overs>
+    <Teams_Higest_Run rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >380</Teams_Higest_Run>
+    <Team_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >India</Team_Name>
+    <Teams_Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >23200</Teams_Wickets>
+  </Team>
+  <T20_World_Cup rdf:about="KB_854984_Class98">
+    <Tournament_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >20 Over Match</Tournament_Type>
+    <Tournament_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >T20 World Cup</Tournament_Name>
+  </T20_World_Cup>
+  <Team rdf:about="KB_854984_Class36">
+    <Teams_Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >1000</Teams_Wickets>
+    <Teams_Higest_Run rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >350</Teams_Higest_Run>
+    <Teams_Overs rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >8213000.0</Teams_Overs>
+    <Team_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pakistan</Team_Name>
+  </Team>
+  <_50_Over_World_Cup rdf:about="KB_854984_Class97">
+    <Tournament_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >50 Over Match</Tournament_Type>
+    <Tournament_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >World Cup</Tournament_Name>
+  </_50_Over_World_Cup>
+  <Cricket rdf:about="KB_854984_Class87">
+    <Sport_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cricket</Sport_Name>
+  </Cricket>
+  <All_Rounder rdf:about="KB_854984_Class86">
+    <Players_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >All Rounder</Players_type>
+    <Player_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Shahid Afridi</Player_Name>
+    <Runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >250525</Runs>
+    <Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >350</Wickets>
+  </All_Rounder>
+  <Match rdf:about="KB_854984_Class35">
+    <Match_Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Melbourne</Match_Location>
+    <Number_Of_Innings rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2</Number_Of_Innings>
+    <Match_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >25-Feb-2018</Match_Date>
+    <Number_Of_Overs rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >50</Number_Of_Overs>
+  </Match>
+  <Sport rdf:about="KB_854984_Class34">
+    <Sport_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cricket</Sport_Name>
+  </Sport>
+  <Red_Ball rdf:about="KB_854984_Class92">
+    <Ball_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Red Ball</Ball_Type>
+  </Red_Ball>
+  <Bowler rdf:about="KB_854984_Class85">
+    <Runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >500</Runs>
+    <Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >100</Wickets>
+    <Player_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hassan Ali</Player_Name>
+    <Players_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bowler</Players_type>
+  </Bowler>
+  <Football rdf:about="KB_854984_Class88">
+    <Sport_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Football</Sport_Name>
+  </Football>
+  <Players rdf:about="KB_854984_Class33">
+    <Runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >25000</Runs>
+    <Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >0</Wickets>
+    <Players_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Batsman</Players_type>
+    <Player_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fakhar Zaman</Player_Name>
+  </Players>
+  <India rdf:about="KB_854984_Class91">
+    <Teams_Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >3626262</Teams_Wickets>
+    <Teams_Overs rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
+    >8544614.0</Teams_Overs>
+    <Team_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >India</Team_Name>
+    <Teams_Higest_Run rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >380</Teams_Higest_Run>
+  </India>
+  <Tournament rdf:about="KB_854984_Class42">
+    <Tournament_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >50 Over Match</Tournament_Type>
+    <Tournament_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >World Cup</Tournament_Name>
+  </Tournament>
+  <India_Vs_Pakistan rdf:about="KB_854984_Class89">
+    <Match_Location rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gadafi Stadium Lahore</Match_Location>
+    <Number_Of_Innings rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2</Number_Of_Innings>
+    <Match_Date rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >25-Feb-2018</Match_Date>
+    <Number_Of_Overs rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >50</Number_Of_Overs>
+  </India_Vs_Pakistan>
+  <Batsman rdf:about="KB_854984_Class84">
+    <Players_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Batsman</Players_type>
+    <Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >0</Wickets>
+    <Player_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Fakher Zaman</Player_Name>
+    <Runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >2500</Runs>
+  </Batsman>
+  <Asia_Cup rdf:about="KB_854984_Class99">
+    <Tournament_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Asia Cup</Tournament_Name>
+    <Tournament_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >50 Over Match</Tournament_Type>
+  </Asia_Cup>
+  <Pink_Ball rdf:about="KB_854984_Class94">
+    <Ball_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pink Ball</Ball_Type>
+  </Pink_Ball>
+  <Players rdf:about="KB_854984_Class32">
+    <Player_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hassan Ali</Player_Name>
+    <Players_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bowler</Players_type>
+    <Runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >500</Runs>
+    <Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >100</Wickets>
+  </Players>
+  <Bat rdf:about="KB_854984_Class83">
+    <Bat_Size rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2.5</Bat_Size>
+  </Bat>
+  <Ground rdf:about="KB_854984_Class41">
+    <Ground_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >National Cricket Stadium</Ground_Name>
+  </Ground>
+  <White_Ball rdf:about="KB_854984_Class93">
+    <Ball_Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >White Ball</Ball_Type>
+  </White_Ball>
+  <Players rdf:about="KB_854984_Class31">
+    <Wickets rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >350</Wickets>
+    <Player_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Shahid Afridi</Player_Name>
+    <Players_type rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >All Rounder</Players_type>
+    <Runs rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >133000</Runs>
+  </Players>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.5, Build 663)  http://protege.stanford.edu -->

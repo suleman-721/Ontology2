@@ -1,0 +1,164 @@
+; Mon Feb 19 20:20:47 PKT 2018
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([KB_854984_Class31] of  Players
+
+	(Player+Name "Shahid Afridi")
+	(Players+type "All Rounder")
+	(Runs 133000)
+	(Wickets 350))
+
+([KB_854984_Class32] of  Players
+
+	(Player+Name "Hassan Ali")
+	(Players+type "Bowler")
+	(Runs 500)
+	(Wickets 100))
+
+([KB_854984_Class33] of  Players
+
+	(Player+Name "Fakhar Zaman")
+	(Players+type "Batsman")
+	(Runs 25000)
+	(Wickets 0))
+
+([KB_854984_Class34] of  Sport
+
+	(Sport+Name "Cricket"))
+
+([KB_854984_Class35] of  Match
+
+	(Match+Date "25-Feb-2018")
+	(Match+Location "Melbourne")
+	(Number+Of+Innings "2")
+	(Number+Of+Overs "50"))
+
+([KB_854984_Class36] of  Team
+
+	(Team+Name "Pakistan")
+	(Teams+Higest+Run 350)
+	(Teams+Overs 8213000.0)
+	(Teams+Wickets 1000))
+
+([KB_854984_Class37] of  Team
+
+	(Team+Name "India")
+	(Teams+Higest+Run 380)
+	(Teams+Overs 2565151.0)
+	(Teams+Wickets 23200))
+
+([KB_854984_Class41] of  Ground
+
+	(Ground+Name "National Cricket Stadium"))
+
+([KB_854984_Class42] of  Tournament
+
+	(Tournament+Name "World Cup")
+	(Tournament+Type "50 Over Match"))
+
+([KB_854984_Class79] of  Ball
+
+	(Ball+Type "White Ball"))
+
+([KB_854984_Class80] of  Umpire
+
+	(Umpire+Name "Aleem Dar"))
+
+([KB_854984_Class81] of  Tv+Umpire
+
+	(Umpire+Name "george"))
+
+([KB_854984_Class82] of  Field+Umpire
+
+	(Umpire+Name "Stefin"))
+
+([KB_854984_Class83] of  Bat
+
+	(Bat+Size "2.5"))
+
+([KB_854984_Class84] of  Batsman
+
+	(Player+Name "Fakher Zaman")
+	(Players+type "Batsman")
+	(Runs 2500)
+	(Wickets 0))
+
+([KB_854984_Class85] of  Bowler
+
+	(Player+Name "Hassan Ali")
+	(Players+type "Bowler")
+	(Runs 500)
+	(Wickets 100))
+
+([KB_854984_Class86] of  All+Rounder
+
+	(Player+Name "Shahid Afridi")
+	(Players+type "All Rounder")
+	(Runs 250525)
+	(Wickets 350))
+
+([KB_854984_Class87] of  Cricket
+
+	(Sport+Name "Cricket"))
+
+([KB_854984_Class88] of  Football
+
+	(Sport+Name "Football"))
+
+([KB_854984_Class89] of  India+Vs+Pakistan
+
+	(Match+Date "25-Feb-2018")
+	(Match+Location "Gadafi Stadium Lahore")
+	(Number+Of+Innings "2")
+	(Number+Of+Overs "50"))
+
+([KB_854984_Class90] of  Pakistan
+
+	(Team+Name "Pakistan")
+	(Teams+Higest+Run 350)
+	(Teams+Overs 5025221.0)
+	(Teams+Wickets 78210))
+
+([KB_854984_Class91] of  India
+
+	(Team+Name "India")
+	(Teams+Higest+Run 380)
+	(Teams+Overs 8544614.0)
+	(Teams+Wickets 3626262))
+
+([KB_854984_Class92] of  Red+Ball
+
+	(Ball+Type "Red Ball"))
+
+([KB_854984_Class93] of  White+Ball
+
+	(Ball+Type "White Ball"))
+
+([KB_854984_Class94] of  Pink+Ball
+
+	(Ball+Type "Pink Ball"))
+
+([KB_854984_Class95] of  National+Cricket+Stadium
+
+	(Ground+Name "National Cricket Stadium"))
+
+([KB_854984_Class96] of  Gadafi+Stadium+Lahore
+
+	(Ground+Name "Gadafi Stadium Lahore"))
+
+([KB_854984_Class97] of  50+Over+World+Cup
+
+	(Tournament+Name "World Cup")
+	(Tournament+Type "50 Over Match"))
+
+([KB_854984_Class98] of  T20+World+Cup
+
+	(Tournament+Name "T20 World Cup")
+	(Tournament+Type "20 Over Match"))
+
+([KB_854984_Class99] of  Asia+Cup
+
+	(Tournament+Name "Asia Cup")
+	(Tournament+Type "50 Over Match"))
